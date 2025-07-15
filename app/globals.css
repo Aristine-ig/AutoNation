@@ -4,8 +4,7 @@
 
 @layer base {
   :root {
-    /* Calming light theme colors */
-  
+    /* Only dark theme is supported. Light theme colors removed. */
   }
 
   .dark {
