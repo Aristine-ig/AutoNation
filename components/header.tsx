@@ -96,7 +96,7 @@ export function Header() {
                 //  <Button href="/sign-in" white onClick={() => { }}>
                 //     Sign In
                 //   </Button>
-                  <Button className="">
+                  <Button>
                     {/* <LogIn className="w-4 h-4 mr-2" /> */}
                     Sign In
                   </Button>
