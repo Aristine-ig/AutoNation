@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useUser, SignOutButton, SignIn } from "@clerk/nextjs";
+import { useUser, SignOutButton, SignIn, SignInButton } from "@clerk/nextjs";
 
 
 
@@ -92,13 +92,12 @@ export function Header() {
                   </SignOutButton>
                 </>
               ) : (
-                //  <Button href="/sign-in" white onClick={() => { }}>
-                //     Sign In
-                //   </Button>
+                <SignInButton mode="modal">
                   <Button>
                     {/* <LogIn className="w-4 h-4 mr-2" /> */}
                     Sign In
                   </Button>
+                </SignInButton>
               )}
               {/* <Button ref="/sign-in"  onClick={() => { }}>
                  Sign In
