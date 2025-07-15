@@ -7,14 +7,7 @@ import { Header } from "@/components/header";
 import { Toaster } from "@/components/ui/toaster";
 import { Providers } from "@/components/providers";
 
-import {
-  ClerkProvider,
-  // SignInButton,
-  // SignUpButton,
-  // SignedIn,
-  // SignedOut,
-  // UserButton,
-} from '@clerk/nextjs'
+import { ClerkProvider } from '@clerk/nextjs'
 
 // Initialize the fonts
 const inter = Inter({
