@@ -1,4 +1,5 @@
 import ButtonSvg from "../assets/svg/ButtonSvg";
+import ButtonGradient from "../assets/svg/ButtonGradient";
 
 const Button = ({ className, href, onClick, children, px, white }) => {
   const classes = `button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 ${
@@ -8,6 +9,7 @@ const Button = ({ className, href, onClick, children, px, white }) => {
 
   const renderButton = () => (
     <button className={classes} onClick={onClick}>
+      <ButtonGradient />
       <span className={spanClasses}>{children}</span>
       {ButtonSvg(white)}
     </button>
@@ -15,6 +17,7 @@ const Button = ({ className, href, onClick, children, px, white }) => {
 
   const renderLink = () => (
     <a href={href} className={classes}>
+      <ButtonGradient />
       <span className={spanClasses}>{children}</span>
       {ButtonSvg(white)}
     </a>
