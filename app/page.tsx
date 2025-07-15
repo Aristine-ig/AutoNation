@@ -24,7 +24,6 @@ import { loading } from "@/assets";
 import { benefits } from "@/constants";
 import Heading from "@/components/Heading";
 import Arrow from "@/assets/svg/Arrow";
-import { GradientLight } from "@/components/design/Benefits";
 import ClipPath from "@/assets/svg/ClipPath";
 
 import { brainwaveSymbol, check } from "@/assets";

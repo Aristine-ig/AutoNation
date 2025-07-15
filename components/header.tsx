@@ -16,7 +16,6 @@ import {
   LogIn,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "./theme-toggle";
 // import { SignInButton } from "@clerk/nextjs";
 
 export function Header() {
