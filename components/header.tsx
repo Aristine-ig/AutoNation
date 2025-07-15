@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useUser, SignOutButton, SignIn, SignInButton } from "@clerk/nextjs";
+// import { useUser, SignOutButton, SignIn, SignInButton } from "@clerk/nextjs";
 
 
 
@@ -19,7 +19,8 @@ import { Button } from "@/components/ui/button";
 // import { SignInButton } from "@clerk/nextjs";
 
 export function Header() {
-  const { user } = useUser();
+  // const { user } = useUser();
+  const user = null; // Temporary placeholder
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
@@ -81,23 +82,23 @@ export function Header() {
                       Start Chat
                     </Link>
                   </Button> */}
-                  <SignOutButton>
+                  {/* <SignOutButton>
                     <Button
                       variant="outline"
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
-                      {/* <LogOut className="w-4 h-4 mr-2" /> */}
+                      <LogOut className="w-4 h-4 mr-2" />
                       Sign out
                     </Button>
-                  </SignOutButton>
+                  </SignOutButton> */}
                 </>
               ) : (
-                <SignInButton mode="modal">
+                // <SignInButton mode="modal">
                   <Button>
-                    {/* <LogIn className="w-4 h-4 mr-2" /> */}
+                    <LogIn className="w-4 h-4 mr-2" />
                     Sign In
                   </Button>
-                </SignInButton>
+                // </SignInButton>
               )}
               {/* <Button ref="/sign-in"  onClick={() => { }}>
                  Sign In

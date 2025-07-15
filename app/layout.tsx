@@ -7,7 +7,7 @@ import { Header } from "@/components/header";
 import { Toaster } from "@/components/ui/toaster";
 import { Providers } from "@/components/providers";
 
-import { ClerkProvider } from '@clerk/nextjs'
+// import { ClerkProvider } from '@clerk/nextjs'
 
 // Initialize the fonts
 const inter = Inter({
@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
 
-    <ClerkProvider>
+    // <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <body className={`${inter.variable} font-sans antialiased`}>
           <Providers>
@@ -38,7 +38,7 @@ export default function RootLayout({
           </Providers>
         </body>
       </html>
-    </ClerkProvider>
+    // </ClerkProvider>
     
   );
 }
