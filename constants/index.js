@@ -288,7 +288,6 @@ export const benefits = [
     backgroundUrl: benefitCard2,
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
-    light: true,
   },
   {
     id: "2",
@@ -305,7 +304,6 @@ export const benefits = [
     backgroundUrl: benefitCard4,
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
-    light: true,
   },
   // {
   //   id: "4",
