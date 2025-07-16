@@ -91,20 +91,11 @@ export function Header() {
                   </SignOutButton> */}
                 </>
               ) : (
-                  <Button
-                    className=""
-                    href="/sign-in"
-                    onClick={() => { }}
-                    px="px-7"
-                  >
+                <Button asChild>
+                  <Link href="/sign-in">
                     Sign In
-                  </Button>
-                // <SignInButton mode="modal">
-                  // <Button>
-                  //   <LogIn className="w-4 h-4 mr-2" />
-                  //   Sign In
-                  // </Button>
-                // </SignInButton>
+                  </Link>
+                </Button>
               )}
               {/* <Button ref="/sign-in"  onClick={() => { }}>
                  Sign In
