@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 // import { useUser, SignOutButton, SignIn, SignInButton } from "@clerk/nextjs";
 
-
+import Button from "@/components/Button";
 
 import {
   Heart,
@@ -15,8 +15,6 @@ import {
   LogOut,
   LogIn,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-// import { SignInButton } from "@clerk/nextjs";
 
 export function Header() {
   // const { user } = useUser();
@@ -93,11 +91,19 @@ export function Header() {
                   </SignOutButton> */}
                 </>
               ) : (
-                // <SignInButton mode="modal">
-                  <Button>
-                    <LogIn className="w-4 h-4 mr-2" />
+                  <Button
+                    className=""
+                    href="/sign-in"
+                    onClick={() => { }}
+                    px="px-7"
+                  >
                     Sign In
                   </Button>
+                // <SignInButton mode="modal">
+                  // <Button>
+                  //   <LogIn className="w-4 h-4 mr-2" />
+                  //   Sign In
+                  // </Button>
                 // </SignInButton>
               )}
               {/* <Button ref="/sign-in"  onClick={() => { }}>
